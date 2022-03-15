@@ -5,15 +5,18 @@ import 'package:flutter_svg/svg.dart';
 
 import 'details.dart';
 
-class  TelaFlag extends StatelessWidget {
-  const  TelaFlag({Key? key}) : super(key: key);
+class TelaFlag extends StatelessWidget {
+  const TelaFlag({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:  AppBar(
-        title:  Text('Bandeiras'),
-        centerTitle:  true,
+      appBar: AppBar(
+        title: Text(
+          'Bandeiras',
+          style: TextStyle(fontSize: 20),
+        ),
+        centerTitle: true,
       ),
       body: FutureBuilder<List<Bandeiras>>(
           future: GetBandeiras(),
